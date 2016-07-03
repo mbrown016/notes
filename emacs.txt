@@ -1,0 +1,36 @@
+Navigation:
+C-v: forward one screen
+M-v: back one screen
+C-l: center on cursor
+
+C-p: previous line
+C-n: next line
+
+C-b: backward one space
+C-f: forward one space
+
+M-f: forward one word
+M-b: backward one word
+
+C-a: beginning of line
+C-e: end of line
+
+M-a: beginning of sentence
+M-e: end of sentence
+
+M-shift-<: move to beginning of text
+M-shift->: move to end of text
+
+C-g: cancel command
+C-u: repeat command (followed by #)
+C-d: Delete character just before the cursor
+
+M-<backspace>: Kill word immediately before cursor
+M-d: Kill next word
+
+C-k: Kill from cursor to end of line
+M-k: Kill to end of current sentence
+
+C-<space>: select text
+C-w: kill selected text
+C-y: yanks (pastes) killed text

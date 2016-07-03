@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+To insert plots inline in Jupyter notebook, run Jupyter magic:
+%matplotlib inline
+
+dataframe.dtypes -- gives you the data types of each column
+dataframe.describe() -- gives you summary statistics for all numeric columns
+dataframe.dropna() -- drop row/col where data is missing
+dataframe.set_index() -- set index of data set
