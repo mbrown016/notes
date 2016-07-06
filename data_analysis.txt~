@@ -1,0 +1,57 @@
+### DATA ANALYSIS ###
+
+* Step 1  --  Look at the data!
+
+SINGLE VARIABLE ANALYSIS
+------------------------
+* Dot and Jitter plots
+* Histograms
+	- Scott's rule for bin size = 3.5 stdev / [ n ^(1/3)]
+* Kernal Density Estimates
+  	- Better than histograms because:
+	  	 * Histograms are not unique
+		 * Histograms are not smooth curves
+		 * The smooth KDE curves are better for computers for future calculations
+		 * Histograms don't handle outliers gracefully
+	- Gaussian kernel is the most widely used
+* Cumulative Distribution Function
+  	- The CDF at point x tells us what % of events has occured to the left of x
+	- Less noisy than histogram while containing the same data
+* Summary Stats (mean, median, stdev, percent rank) only apply to normal distributions!
+* Median and percentiles are more flexible and robust than mean, stdev, etc.
+* Inter-quartile range (IQR)  --  the distance between the 75th and 25th percentile
+  	- This measure replaces stdev for non-normal distributions
+* Box plots can be used to show median and percentiles
+
+BIVARIATE ANALYSIS (2 VARIABLES)
+--------------------------------
+* Most commonly used to look at the relationship between the two variables
+* Basic  --  scatter plot, plot one variable against another
+  	 - Smoothing the data helps w/ noisy data sets (Splines & LOESS)
+	 - Splines  --  goal is overall smoothness (less responsive to local details)
+	 - LOESS  --  more responsive, computationally intense
+	 - After smoothing, look at the residuals (remainder of the data)
+	   	 * Should be balanced, free from trend
+		 * May want to plot ABS to look at magnitude
+		 * May want to use QQ plot to check for Gaussian
+* Logarithmic Plots
+  	 - 3 benefits:
+		 * Reigns in large variations in data
+		 * Turn multiplicative variations into addition
+		 * They reveal exponential and power law behavior
+	 - 2 types:
+		 * semi-logarithmic (single) plots  --  1 axis is log
+		 * double logarithmic (log-log) plots -- both axis are log
+* Banking
+	 - changing the aspect ratio of the graph to make the slope ~45 degrees
+* Linear regression
+  	 - Most over used tool in statistics!
+	 - Applies when we have a set of input values (control) and for each, we measure an output value (response)
+	 - Linear regression gives us a predictive line that minimizes error
+	 - Ask 3 questions before using:
+	         * Do you need regression? Regression only makes sense when used for prediction.
+		 * Is the linear assumption appropriate?  Can the data be described by a straight line?
+		 * Is something else going on (outliers, wierd data, etc)?
+
+HOW TO DISPLAY DATA
+-------------------

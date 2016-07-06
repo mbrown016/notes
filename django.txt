@@ -1,0 +1,18 @@
+### DJANGO NOTES ###
+
+COMMANDS
+--------
+Django-admin startproject <projectname>  --  creates project
+python manage.py runserver  --  run local development server
+python monage.py startapp webapp  --  creates webapp
+
+
+FUNCTIONALITY
+-------------
+* views = public interface.  They are the templates for page types (e.g. Homepage, articles, etc)
+* To get from a URL to a view, we use 'URLconfs' which maps URL patterns to views
+* Each view does one of two things:
+       - return a HTTPResponse, or
+       - raise an exception, such as HTTP 404
+* Models  --  each model refers to a DB table
+* Each attribute of the model represents a DB field

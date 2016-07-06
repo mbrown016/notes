@@ -1,0 +1,17 @@
+### PREDICTIVE MODELING ###
+
+* How do we segment the population with respect to something we would like to know or predict?
+* Start by finding informative attributes -- those that are coorilated with the target attribute we wish to predict.
+* Two types of "supervised" models (where the outcome is knowable):
+      - Classification (inc Class-probability-estimation models)
+      - Regression
+* Selecting Informative Attributes -- Decision Tree or Tree-based models:
+      - Entropy -- how mixed or impure the segment is with respect to the properties of interest
+      		* 1 = impure, 0 = pure
+     		* entropy = -P1 x log2(P1) - P2 x log2(P2) - ...
+		* Pi = relative percentage of property 'i' within the set
+      - Information Gain (IG) -- the change in entropy due to new info added to the model
+      		* IG (parent, children) = entropy (parent) - [P(c1) x entropy(c1) + P(c2) x entropy(c2) ... ]
+		* P = proportion of instance that belong to child
+		* The entropy for each child is weighted by P
+      
